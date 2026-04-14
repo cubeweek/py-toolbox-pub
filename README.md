@@ -1,22 +1,23 @@
 <img src="resources/imgs/py-toolbox-README.jpg" style="max-width: 100%; height: auto;"><br>
-일상적인 반복 작업을 자동화하기 위한 스크립트 모음 레포입니다.<br>
-각 스크립트는 독립적으로 실행 가능합니다.
+귀찮거나 반복해야 하는 작업을 자동화시킨 파이썬 스크립트 모음입니다.<br>
+각 스크립트는 독립적으로 실행 가능합니다.<br>
+(p.s 만든 사람이 Mac 환경에서만 돌려봐서 그 외 환경에서는 실행 결과가 검증되지 않았습니다🙂‍↕️)
 
 ## 🚀 Tool List
-<small>
+| 카테고리                                   | 스크립트 명                                              | 주요 기능                                                                          | 핵심 lib                                                                               | 비고 |
+|:---------------------------------------|:----------------------------------------------------|:-------------------------------------------------------------------------------|:-------------------------------------------------------------------------------------| :--- |
+| <small>- 이미지 프로세싱</small>              | <small>[`make_reward_chart.py`](/src/make_reward_chart.py) </small>| <small>A4 사이즈의 번호 기반 칭찬 스티커 판 생성 </small>                                      | <sub>`Pillow (PIL)`<br>`Matplotlib`</sub>    | <small>-</small>|
+| <small>- 웹 크롤링<br>- 자동화 테스트</small>   | <small>[`autotest_backjoon.py`](src/autotest_backjoon.py)  </small>| <small>1. 백준 문제의 예시들을 크롤링(및 캐싱)<br>2. 해당 소스를 컴파일하여 실행 결과가 예제와 일치하는지 비교</small> | <sub>`Selenium`<br>`Webdriver-manager`<br>`BeautifulSoup4`<br>`Subprocess`</sub>| <small>**Chrome 필요** </small>|
+| <small>- 웹 크롤링<br>- 파일 시스템</small>   | <small>[`move_by_tier.py`](src/move_by_tier.py)            </small>| <small>백준/LeetCode 소스코드를 난이도 별(문제의 난이도를 크롤링하여 확인함) 폴더로 자동 분류 </small>          | <sub>`Requests`<br>`Pathlib`<br>`Urllib`<br>`JSON`<br>`Shutil`</sub>| <small>- </small>|
+| <small>- 텍스트 파싱<br>- 문서 자동 갱신 </small> | <small>[`update_readme.py`](src/update_readme.py)                              </small>| <small>문제 풀이 현황을 분석하여 README.md의 문제 리스트(티어별) 자동 갱신 </small>                    | <sub>`Regular Expression (re)`<br>`JSON`<br>`Collections`<br>`Pathlib`       </sub>  | - |
 
-| 카테고리                 | 스크립트 명                                              | 주요 기능 | 핵심 lib                                                            | 비고 |
-|:---------------------|:----------------------------------------------------| :--- |:------------------------------------------------------------------| :--- |
-| - 이미지 프로세싱           | [`make_reward_chart.py`](/src/make_reward_chart.py) | A4 가로 사이즈의 번호 기반 칭찬 스티커 판(Grid) 생성 | `Pillow (PIL)`<br>`Matplotlib`                                        | - |
-| - 웹 크롤링<br>- 자동화 테스트 | [`autotest_backjoon.py`](src/autotest_backjoon.py)  | 백준 예제 문제를 크롤링하여 로컬 JAR 파일과 자동 비교 테스트 | `Selenium`<br>`Webdriver-manager`<br>`BeautifulSoup4`<br>`Subprocess` | **Chrome 필요** |
-| - API 연동<br>- 파일 시스템 | [`move_by_tier.py`](src/move_by_tier.py)            | solved.ac API 연동을 통해 백준/LeetCode 소스코드를 난이도별 폴더로 자동 분류 | `Requests`<br>`Pathlib`<br>`Urllib`<br>`JSON`<br>`Shutil`                 | - |
-| - 텍스트 파싱<br>- 문서 자동화 | [`update_readme.py`](src/update_readme.py)                              | 문제 풀이 현황을 분석하여 README.md의 문제 리스트(티어별) 자동 갱신 | `Regular Expression (re)`<br>`JSON`<br>`Collections`<br>`Pathlib`       | - |
-</small>
+
 ## 🛠 Installation & Setup
+
 ### 파이썬 가상환경 설치
+
 ```bash
-# 가상환경 설치
-python -m venv .venv
+python -m venv .venv # 파이썬 가상환경 세팅
 
 # 가상환경 활성화
 source .venv/bin/activate # Mac/Linux
