@@ -1,0 +1,19 @@
+*
+**/private/
+!.gitignore
+!README.md
+
+# 기본 폴더 및 하위 파일 추가
+!.github
+!.github/**
+!config
+!config/**
+!resources/
+!resources/**
+!input/
+!output/
+!guide/
+!guide/**
+!temp/
+!src/
+!src/**
