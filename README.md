@@ -1,4 +1,4 @@
-<img src="resources/imgs/py-toolbox-thumbnail.jpg" style="max-width: 100%; height: auto;"><br>
+<img src="resources/imgs/py-toolbox-README.jpg" style="max-width: 100%; height: auto;"><br>
 일상적인 반복 작업을 자동화하기 위한 스크립트 모음 레포입니다.<br>
 각 스크립트는 독립적으로 실행 가능합니다.
 
