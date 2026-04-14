@@ -6,10 +6,10 @@
 ## 🚀 Tool List
 | 카테고리                                   | 스크립트 명                                              | 주요 기능                                                                          | 핵심 lib                                                                               | 비고 |
 |:---------------------------------------|:----------------------------------------------------|:-------------------------------------------------------------------------------|:-------------------------------------------------------------------------------------| :--- |
-| <small>- 이미지 프로세싱</small>              | <small>[`make_reward_chart.py`](/src/make_reward_chart.py) </small>| <small>A4 사이즈의 번호 기반 칭찬 스티커 판 생성 </small>                                      | <sub>`Pillow (PIL)`<br>`Matplotlib`</sub>    | <small>-</small>|
-| <small>- 웹 크롤링<br>- 자동화 테스트</small>   | <small>[`autotest_backjoon.py`](src/autotest_backjoon.py)  </small>| <small>1. 백준 문제의 예시들을 크롤링(및 캐싱)<br>2. 해당 소스를 컴파일하여 실행 결과가 예제와 일치하는지 비교</small> | <sub>`Selenium`<br>`Webdriver-manager`<br>`BeautifulSoup4`<br>`Subprocess`</sub>| <small>**Chrome 필요** </small>|
-| <small>- 웹 크롤링<br>- 파일 시스템</small>   | <small>[`move_by_tier.py`](src/move_by_tier.py)            </small>| <small>백준/LeetCode 소스코드를 난이도 별(문제의 난이도를 크롤링하여 확인함) 폴더로 자동 분류 </small>          | <sub>`Requests`<br>`Pathlib`<br>`Urllib`<br>`JSON`<br>`Shutil`</sub>| <small>- </small>|
-| <small>- 텍스트 파싱<br>- 문서 자동 갱신 </small> | <small>[`update_readme.py`](src/update_readme.py)                              </small>| <small>문제 풀이 현황을 분석하여 README.md의 문제 리스트(티어별) 자동 갱신 </small>                    | <sub>`Regular Expression (re)`<br>`JSON`<br>`Collections`<br>`Pathlib`       </sub>  | - |
+| <sub>- 이미지 프로세싱</sub>                | [`make_reward_chart.py`](/src/make_reward_chart.py) | A4 사이즈의 번호 기반 칭찬 스티커 판 생성                                       | <sub>`Pillow (PIL)`<br>`Matplotlib`</sub>    | -|
+| <sub>- 웹 크롤링<br>- 자동화 테스트</sub>    | [`autotest_backjoon.py`](src/autotest_backjoon.py)  | 1. 백준 문제의 예시들을 크롤링(및 캐싱)<br>2. 해당 소스를 컴파일하여 실행 결과가 예제와 일치하는지 비교 | <sub>`Selenium`<br>`Webdriver-manager`<br>`BeautifulSoup4`<br>`Subprocess`</sub>| **Chrome 필요** |
+| <sub>- 웹 크롤링<br>- 파일 시스템</sub>     | [`move_by_tier.py`](src/move_by_tier.py)            | 백준/LeetCode 소스코드를 난이도 별(문제의 난이도를 크롤링하여 확인함) 폴더로 자동 분류           | <sub>`Requests`<br>`Pathlib`<br>`Urllib`<br>`JSON`<br>`Shutil`</sub>| - |
+| <sub>- 텍스트 파싱<br>- 문서 자동 갱신 </sub> | [`update_readme.py`](src/update_readme.py)                              | 문제 풀이 현황을 분석하여 README.md의 문제 리스트(티어별) 자동 갱신                     | <sub>`Regular Expression (re)`<br>`JSON`<br>`Collections`<br>`Pathlib`       </sub>  | - |
 
 
 ## 🛠 Installation & Setup
